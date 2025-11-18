@@ -112,7 +112,7 @@ def recursion(..., level):
 
 **💡 Suggerimenti Pratici**
 - Quando è necessario copiare liste di oggetti per evitare di modificare l’originale durante la ricorsione, 
-è meglio usare il metodo `.copy()` che crea una copia superficiale della lista: la nuova lista contiene gli stessi 
+è meglio usare il metodo `.copy()` (vedi anche [`.deepcopy()`](https://docs.python.org/3/library/copy.html)) che crea una copia superficiale della lista: la nuova lista contiene gli stessi 
 oggetti della lista originale, ma modificando la lista copiata non si altera la lista originale.
     ```code
     lista_copia = lista_originale.copy()
