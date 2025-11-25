@@ -97,7 +97,10 @@ class Model:
 
 
 
-    def _ricorsione(self, start_index: int, pacchetto_parziale: list, durata_corrente: int, costo_corrente: float, valore_corrente: int, attrazioni_usate: set):
+    #def _ricorsione(self, start_index: int, pacchetto_parziale: list, durata_corrente: int, costo_corrente: float, valore_corrente: int, attrazioni_usate: set):
+    def _ricorsione(self, start_index: int, lista_tour: list, pacchetto_parziale: list,
+                        durata_corrente: int, costo_corrente: float, valore_corrente: int,
+                        attrazioni_usate: set, max_giorni: int, max_budget: float):
         """ Algoritmo di ricorsione che deve trovare il pacchetto che massimizza il valore culturale"""
 
         # TODO: è possibile cambiare i parametri formali della funzione se ritenuto opportuno
