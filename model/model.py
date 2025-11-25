@@ -97,7 +97,7 @@ class Model:
 
 
 
-    #def _ricorsione(self, start_index: int, pacchetto_parziale: list, durata_corrente: int, costo_corrente: float, valore_corrente: int, attrazioni_usate: set):
+
     def _ricorsione(self, start_index: int, lista_tour: list, pacchetto_parziale: list,
                         durata_corrente: int, costo_corrente: float, valore_corrente: int,
                         attrazioni_usate: set, max_giorni: int, max_budget: float):
@@ -124,7 +124,7 @@ class Model:
             if len(tour.attrazioni.intersection(attrazioni_usate)) > 0:
                 continue
 
-            # Aggiunta
+
             pacchetto_parziale.append(tour)
             nuove_attr = set(tour.attrazioni)
             attrazioni_usate.update(nuove_attr)
